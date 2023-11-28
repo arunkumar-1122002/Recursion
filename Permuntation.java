@@ -11,10 +11,8 @@ acb
 abc
 [cba, bca, bac, cab, acb, abc]
 */
-
-package recursion;
 import java.util.ArrayList;
-class Permuntation
+public class Permuntation
 {
     public static void main(String[] args) {
    String str="abc";
@@ -38,18 +36,18 @@ class Permuntation
     }
     static ArrayList<String> permuntationreturn(String left,String right)
     {
-        ArrayList<String> ans=new ArrayList<>();
+        
        if(right.isEmpty())
        {
         return new ArrayList<String>(){{add(left);}};
        }
+       ArrayList<String> ans=new ArrayList<>();
        for(int i=0;i<=left.length();i++)
        {
            String st=left.substring(0, i);
             char ch=right.charAt(0);
             String fn=left.substring(i,left.length());
-           ArrayList<String> value= permuntationreturn(st+ch+fn,right.substring(1));
-           ans.addAll(value);
+           ans.addAll(permuntationreturn(st+ch+fn,right.substring(1)));
        }
        return ans;
     }
