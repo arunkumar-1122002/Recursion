@@ -1,7 +1,24 @@
 /*
+This program is used to calculate the number of possible way to reach target 
+Lets take example (3x3 Matrix):
 
+current position(0,0)
+target position(2,2)
+_____________
+| C |   |   |
+|___|___|___|
+|   |   |   |
+|___|___|___|
+|   |   | T |
+|___|___|___|
 
+INPUT:
+{0,0}
+{2,2}
+OUTPUT:
+[DDRR, DRDR, DRRD, RDDR, RDRD, RRDD]
 
+This program find answer by void and return ArrayList
 */
 import java.util.ArrayList;
 public class Mazepath { 
