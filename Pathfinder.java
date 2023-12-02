@@ -1,5 +1,5 @@
 /*
-This program is used to find the possible way to reach current position to destination and print the path by String and matrix
+This program is used to find the possible way to reach current position to destination by backtracking.
 basically i am take the matrix as 3x3
 In this 3x3 matrix we are going to find the path by
 1.using void print path
